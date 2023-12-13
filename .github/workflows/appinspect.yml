@@ -1,11 +1,16 @@
 name: Splunk Appinspect
 on:
   workflow_call:
+    secrets:
+      API_USER:
+        required: true
+      API_PASS:
+        required: true
     inputs:
       package-name:
         required: true
         type: string
-  
+
 jobs:
   appinspect-job:
     runs-on: ubuntu-latest
