@@ -27,5 +27,8 @@ jobs:
     uses: ZachTheSplunker/app-wfa/.github/workflows/appinspect.yml@main
     secrets: inherit
     with: 
-        package-name: Package-name
+      package-name: Package-name
+    secrets:
+      API_USER: ${{ secrets.API_USER }}
+      API_PASS: ${{ secrets.API_PASS }}
 ```
