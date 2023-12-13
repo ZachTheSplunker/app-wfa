@@ -24,5 +24,8 @@ on:
 
 jobs:
   call-packaging-workflow:
-    uses: ZachTheSplunker/splunk-github-wfa/.github/workflows/appinspect.yml@main
+    uses: ZachTheSplunker/app-wfa/.github/workflows/appinspect.yml@main
+    secrets: inherit
+    with: 
+        package-name: Package-name
 ```
