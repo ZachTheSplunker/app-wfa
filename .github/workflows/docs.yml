@@ -3,9 +3,6 @@ name: Deploy Documentation
 on:
   workflow_call:
 
-permissions:
-  contents: write
-
 jobs:
   publish:
     name: Publish to retype branch
